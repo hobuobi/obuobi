@@ -1,7 +1,9 @@
 $(document).ready(function(){
-
   $('#logo-nav').css('height', $('#logo-bars').height()+20);
-
+  $('#logo-nav').animate({
+    opacity: 1,
+    'margin-top': '100px'
+  },1200)
   $('.nav-bubble').hover(
     function(){
       $(this).animate({
@@ -25,4 +27,7 @@ $(document).ready(function(){
     console.log($(this).parent().height())
     return $(this).parent().height()-28;
   })
+
+  $('#triangles').children().mouseenter(function(){ $(this).fadeOut(200)})
+    .mouseout(function(){ $(this).fadeIn(200)})
 })

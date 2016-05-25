@@ -78,7 +78,8 @@ body {
 }
 #logo-nav {
   position: relative;
-  margin-top: 6%;
+  margin-top: 200px;
+  opacity: 0;
   width: 100%;
 }
 #logo-bars {
@@ -127,16 +128,22 @@ img#sig {
   height: 100%;
 }
 
+svg#triangles{
+  position: fixed;
+  top: 7%;
+  opacity: 0.3;
+
+}
 
 /* FOR ABOUT */
 
 img#portrait {
-  position: absolute;
+  position: fixed;
   height: 600px;
   bottom: -50px;
 }
 img#portrait-sil{
-  position: absolute;
+  position: fixed;
   height: 600px;
   bottom: -40px;
   left: 40px;
