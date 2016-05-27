@@ -73,6 +73,7 @@ body {
   right: 63%;
 }
 #back{
+  /*position: fixed;*/
   top: 20px;
   left: 20px;
 }
@@ -171,4 +172,37 @@ div.info {
   font-size: 2em;
   float: right;
 
+}
+
+/* FOR PORTFOLIO */
+
+#gallery {
+  float:right;
+}
+
+.por-img {
+  position: relative;
+  padding: 0px;
+  margin:0px;
+  background-color: #2B3990;
+  width: 100%;
+  transition: background-color 0.2s;
+
+  text-align: center;
+}
+.holder {
+  margin: 5px;
+}
+img.por-img:hover {
+  opacity: 0.5;
+}
+
+.por-tag {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+  color: white;
 }
