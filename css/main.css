@@ -76,6 +76,7 @@ body {
   /*position: fixed;*/
   top: 20px;
   left: 20px;
+  z-index: 1000;
 }
 #logo-nav {
   position: relative;
@@ -189,12 +190,11 @@ div.info {
   transition: background-color 0.2s;
 
   text-align: center;
+  
+  cursor: pointer;
 }
 .holder {
   margin: 5px;
-}
-img.por-img:hover {
-  opacity: 0.5;
 }
 
 .por-tag {
@@ -203,6 +203,31 @@ img.por-img:hover {
   width: 100%;
   text-align: center;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 3em;
   color: white;
+  display: none;
+}
+
+#por-info{
+    margin-top: 200px;
+    padding: 20px 40px 20px 40px;
+    
+    background-color: rgba(0,0,0,0.35);
+    border-radius: 20px;
+}
+#por-title{
+    font-size: 4.5em;
+    font-weight: 700;
+    color:white;
+}
+#por-desc{
+    color: white;
+    font-size: 2em;
+    line-height: 40px;
+}
+#col1 {
+    margin-top: 20px;
+}
+#col2 {
+    margin-top: 20px;
 }

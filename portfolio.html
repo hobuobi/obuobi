@@ -44,23 +44,43 @@
   </div>
 </a>
 
+<div class="col-md-6" id="por-info">
+    <span id="por-title">PICK A PROJECT, ANY PROJECT.</span>
+    <hr>
+    <p id="por-desc"><i>Come on now, don't be shy.</i></p>
+</div>
 
 <div class="col-md-6" id="gallery">
   <div class="col-md-6" id='col1'>
+    <!--
     <div class="por-img holder"><img class="por-img" src="img/shindo002.jpg"><div class='por-tag' align="center">SHINDO</div></div>
     <div class="por-img holder"><img class="por-img" src="img/DH.jpg"></div>
     <div class="por-img holder"><img class="por-img" src="img/meander001.jpg"></div>
-
+    -->
   </div>
-  <div class="col-md-6" id='col2'>
-    <div class="por-img holder"><img class="por-img" src="img/BUD003.jpg"></div>
+  <div class="col-md-6" id='col2'>\
+    <!--
+    <div class="por-img holder"><img class="por-img" src="img/BUD002.jpg"></div>
     <div class="por-img holder"><img class="por-img" src="img/CS171_001.jpg"></div>
     <div class="por-img holder"><img class="por-img" src="img/centroid001.jpg"></div>
+    -->
   </div>
 </div>
 </body>
 <script src='js/portfolio-data.js'></script>
 <script>
   console.log(portfolio_data);
+  
+  var count = 1;
+  for(key in portfolio_data)
+  {
+      var id = key;
+      var title = portfolio_data[key].title;
+      var path = portfolio_data[key].path;
+      var newEntry = "<div class='por-img holder' id='"+id+"'><img class='por-img' src= '"+path+"'><div class='por-tag' align='center'>"+title+"</div></div>"
+      if(count%2 == 1){ $('#col1').append(newEntry) }
+      else{ $('#col2').append(newEntry) }
+      count++;
+  }
 </script>
 </html>
