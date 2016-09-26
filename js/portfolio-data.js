@@ -1,5 +1,10 @@
 var portfolio_data =
 {
+    'abbott-project': {
+      'path': 'img/abbott-project.JPG',
+      'title': 'ENERGY EXPLORER',
+      'description': 'Completed a web application for Abbott Pharmaceutical to explore various energy landscapes in 2025. The project features custom styled inputs for different energy resources, which, in turn cause changes in visualizations on the right pane. The full project demo can be viewed at http://abbott-energy-calculator.herokuapp.com .'
+    },
     'shindo': {
       'path': 'img/shindo002.jpg',
       'title': 'SHINDO',
@@ -30,9 +35,5 @@ var portfolio_data =
         'title': 'CENTROID',
         'description': 'An experimental typeface, based around the concept of creating every letter in the English alphabet using only bars and a single circle. Interestingly enough, this project was something I have been messing around with since 6th grade; I decided just recently to make something of higher fidelity. Find the full project at http://www.behance.net/gallery/41778667/CENTROID .'
     },
-    'abbott-project': {
-      'path': 'img/abbott-project.JPG',
-      'title': 'ENERGY EXPLORER',
-      'description': 'Completed a web application for Abbott Pharmaceutical to explore various energy landscapes in 2025. The project features custom styled inputs for different energy resources, which, in turn cause changes in visualizations on the right pane. The full project demo can be viewed at http://abbott-energy-calculator.herokuapp.com .'
-    }
+
 }
