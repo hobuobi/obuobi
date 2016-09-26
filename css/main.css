@@ -156,7 +156,7 @@ img#portrait-sil{
 }
 
 div.info {
-  display: inline-block;
+  display: relative;
   padding: 30px;
   margin: 20px;
   float: right;
@@ -173,7 +173,7 @@ div.info {
 }
 
 .info > h2 {
-  display: inline-block;
+  display: relative;
   font-size: 2em;
   float: right;
 
