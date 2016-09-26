@@ -30,8 +30,8 @@ $(document).ready(function(){
 
   $('#triangles').children().mouseenter(function(){ $(this).fadeOut(200)})
     .mouseout(function(){ $(this).fadeIn(200)})
-    
-    
+
+
   $('div.por-img').hover(
       function(){
           if($(this).hasClass('active') == false){
@@ -43,23 +43,40 @@ $(document).ready(function(){
           if($(this).hasClass('active') == false){
             $(this).children('img').animate({opacity: 1},200)
             $(this).children('.por-tag').fadeOut(200);
-          }   
+          }
       }
   )
-  
+
   $('div.por-img').click(
       function(){
           if($(this).hasClass('active')==false){
             $('.active').children('img').animate({opacity: 1},200);
             $('.active').children('.por-tag').fadeOut(200);
-            $('.active').removeClass('active'); 
+            $('.active').removeClass('active');
             id = $(this).attr('id');
             var title = portfolio_data[id].title;
             var desc = portfolio_data[id].description;
             $(this).addClass('active');
             $('#por-title').text(title);
-            $('#por-desc').text(desc);
+            $('#por-desc').html(linkify(desc));
           }
       }
   )
 })
+
+function linkify(str){
+  var embeddedLink = ""
+  var linkIndex = str.indexOf("http://");
+  if(linkIndex != -1)
+  {
+    var linkToEnd = str.substring(linkIndex);
+    var linkEnd = linkToEnd.indexOf(" ");
+    var endIndex = linkIndex+linkEnd;
+    var link = str.substring(linkIndex, endIndex)
+    embeddedLink = str.substring(0,linkIndex)+"<a href='"+link+"'>"+link+"</a>"+str.substring(endIndex)
+  }
+  else{
+    embeddedLink = str
+  }
+  return embeddedLink
+}

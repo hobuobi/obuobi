@@ -14,6 +14,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  color: limegreen;
+  text-decoration: underline;
+}
 /* CLASSES */
 
 .nav-bubble {
@@ -190,7 +194,7 @@ div.info {
   transition: background-color 0.2s;
 
   text-align: center;
-  
+
   cursor: pointer;
 }
 .holder {
@@ -211,7 +215,7 @@ div.info {
 #por-info{
     margin-top: 200px;
     padding: 20px 40px 20px 40px;
-    
+
     background-color: rgba(0,0,0,0.35);
     border-radius: 20px;
 }
