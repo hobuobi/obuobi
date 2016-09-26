@@ -59,6 +59,7 @@ $(document).ready(function(){
             $(this).addClass('active');
             $('#por-title').text(title);
             $('#por-desc').html(linkify(desc));
+            $('#por-display').attr('src',portfolio_data[id].path)
           }
       }
   )
@@ -73,7 +74,7 @@ function linkify(str){
     var linkEnd = linkToEnd.indexOf(" ");
     var endIndex = linkIndex+linkEnd;
     var link = str.substring(linkIndex, endIndex)
-    embeddedLink = str.substring(0,linkIndex)+"<a href='"+link+"'>"+link+"</a>"+str.substring(endIndex)
+    embeddedLink = str.substring(0,linkIndex)+"<a href='"+link+"' target='_blank'>"+link+"</a>"+str.substring(endIndex)
   }
   else{
     embeddedLink = str

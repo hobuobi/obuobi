@@ -197,6 +197,11 @@ div.info {
 
   cursor: pointer;
 }
+#por-display {
+  position: relative;
+  margin: 10px;
+  width: 100%;
+}
 .holder {
   margin: 5px;
 }

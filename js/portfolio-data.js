@@ -3,7 +3,7 @@ var portfolio_data =
     'shindo': {
       'path': 'img/shindo002.jpg',
       'title': 'SHINDO',
-      'description': 'SHINDO is a wearable device used to convert text and basic ideas into vibrations, enabling deaf-blind patients to remotely receive information from loved ones and/or guardians.\n The project was completed in under 24 hours at the Brown STEAM Assistive Tehcnology Makeathon; along the way, the overarching inspiration for this particular project was the goal of effectively pulling information from various senses and translating it into other modes.'
+      'description': 'SHINDO is a wearable device used to convert text and basic ideas into vibrations, enabling deaf-blind patients to remotely receive information from loved ones and/or guardians.\n The project was completed in under 24 hours at the Brown STEAM Assistive Tehcnology Makeathon; along the way, the overarching inspiration for this particular project was the goal of effectively pulling information from various senses and translating it into other modes. More at http://bit.ly/2dl7Gx4 .'
     },
     'bud': {
       'path': 'img/BUD002.jpg',
@@ -28,7 +28,7 @@ var portfolio_data =
     'centroid': {
         'path': 'img/centroid001.jpg',
         'title': 'CENTROID',
-        'description': 'An experimental typeface, based around the concept of creating every letter in the English alphabet using only bars and a single circle.'
+        'description': 'An experimental typeface, based around the concept of creating every letter in the English alphabet using only bars and a single circle. Interestingly enough, this project was something I have been messing around with since 6th grade; I decided just recently to make something of higher fidelity. Find the full project at http://www.behance.net/gallery/41778667/CENTROID .'
     },
     'abbott-project': {
       'path': 'img/abbott-project.JPG',
