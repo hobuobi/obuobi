@@ -8,7 +8,7 @@ var portfolio_data =
     'bud': {
       'path': 'img/BUD002.jpg',
       'title': 'BUD',
-      'description': 'BUD was built to be an aesthetically appealing desktop companion that responds to the conditions of the user and environment; through pulling data from the Microsoft Band and the Weather Channel API, the petals of the wooden flower would open or close according to this information. The project was built with students from Brown University and Rhode Island School of Design at Hack@Brown 2016. Due to time constraints, the project could not be completed at the event, but all of the physical components were designed and built on site.'
+      'description': 'BUD was built to be an aesthetically appealing desktop companion that responds to the conditions of the user and environment; through pulling data from the Microsoft Band and the Weather Channel API, the petals of the wooden flower would open or close according to this information. The project was built with students from Brown University and Rhode Island School of Design at Hack@Brown 2016. Due to time constraints, the project could not be completed at the event, but all of the physical components were designed and built on site. More information at http://devpost.com/software/bud-8c4h5f .'
     },
     'dh': {
         'path': 'img/DH.JPG',
@@ -31,7 +31,7 @@ var portfolio_data =
         'description': 'An experimental typeface, based around the concept of creating every letter in the English alphabet using only bars and a single circle.'
     },
     'abbott-project': {
-      'path': 'img/abbott-project.jpg',
+      'path': 'img/abbott-project.JPG',
       'title': 'ENERGY EXPLORER',
       'description': 'Completed a web application for Abbott Pharmaceutical to explore various energy landscapes in 2025. The project features custom styled inputs for different energy resources, which, in turn cause changes in visualizations on the right pane. The full project demo can be viewed at http://abbott-energy-calculator.herokuapp.com .'
     }
