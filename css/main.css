@@ -5,7 +5,8 @@ body {
     height: 100%;
     margin: 0;
     background: #6666ff;
-    background: linear-gradient(#6666ff, #2B3990);
+    background: linear-gradient(#FFF, #DDD);
+    /* background: linear-gradient(#6666ff, #2B3990); */
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -19,7 +20,13 @@ a {
   text-decoration: underline;
 }
 /* CLASSES */
-
+.nav-row {
+  display:inline-block;
+  margin: 10px 0px;
+  padding: 0px 20px;
+  width: 100%;
+  height: 150px;
+}
 .nav-bubble {
   position: absolute;
   height: 80px;
@@ -49,9 +56,7 @@ a {
   float: left;
   margin: 10px;
 }
-#portfolio > .bubble{
-  float: right;
-}
+
 .bubble-cont {
   margin-top: 30px;
   line-height: 80px;
@@ -63,18 +68,21 @@ a {
 
 }
 /* IDs */
-
+#nav-side {
+  position: fixed;
+  top:50px;
+  left:20px;
+  height: 100%;
+  width:300px;
+}
 #about {
-    top: 2%;
-    left: 50%;
+
 }
 #resume {
-  top: 80%;
-  left: 63%;
+
 }
 #portfolio{
-  top: 80%;
-  right: 63%;
+
 }
 #back{
   /*position: fixed;*/
@@ -88,15 +96,18 @@ a {
   opacity: 0;
   width: 100%;
 }
-#logo-bars {
+#logo{
   display: block;
   margin: auto;
+  z-index: 1000;
 }
-#main-container {
-  height: 100%;
-  width: 100%;
+#grid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
-
 #header {
   position: fixed;
   top: 0px;
@@ -112,7 +123,7 @@ a {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 80px;
+  height: 120px;
   padding: 10px;
 
 }
@@ -132,12 +143,14 @@ img#sig {
   margin-right: 30px;
   display: inline-block;
   height: 100%;
+  opacity: 0.5;
 }
 
 svg#triangles{
   position: fixed;
   top: 7%;
   opacity: 0.3;
+  z-index: -1;
 
 }
 
@@ -145,12 +158,12 @@ svg#triangles{
 
 img#portrait {
   position: fixed;
-  height: 600px;
+  height: 700px;
   bottom: -50px;
 }
 img#portrait-sil{
   position: fixed;
-  height: 600px;
+  height: 700px;
   bottom: -40px;
   left: 40px;
 }
@@ -161,7 +174,8 @@ div.info {
   margin: 20px;
   float: right;
 
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #2B3990;
+  opacity: 0.7;
   border-radius: 20px;
   box-shadow: 10px 10px 15px #333;
 
@@ -218,11 +232,12 @@ div.info {
 }
 
 #por-info{
-    margin-top: 200px;
+    margin: 200px 0px 20px 0px;
     padding: 20px 40px 20px 40px;
 
-    background-color: rgba(0,0,0,0.35);
-    border-radius: 20px;
+    background-color: rgba(43,57,144,0.7);
+
+    border-radius: 0px 20px 20px 0px;
 }
 #por-title{
     font-size: 3em;
